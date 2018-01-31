@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cucumber.runner.EbayFirefoxRunner
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 94.905 s - in com.cucumber.runner.EbayFirefoxRunner
