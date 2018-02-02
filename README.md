@@ -1,5 +1,5 @@
 [![SeleniumHQ](http://www.seleniumhq.org/images/big-logo.png)](http://www.seleniumhq.org/)
-# ![Cucumber Logo](docs/images/cucumber.png)
+# ![Cucumber Logo](Image/cucumber.png)
 # Hybrid Selenium-Cucumber BDD Automation Framework 
 
 The purpose of the project is to display BDD framework for digital web application using combination of leading edge tools like Selenium & Cucumber
