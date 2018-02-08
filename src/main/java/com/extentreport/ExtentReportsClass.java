@@ -20,7 +20,7 @@ public class ExtentReportsClass {
 
     
     @BeforeTest
-    public static void startReport()
+    public static void startReport(String ReportName, String BrowserName)
     {
     	
     	Path currentRelativePath = Paths.get("");
@@ -28,10 +28,11 @@ public class ExtentReportsClass {
     	String ExtentReportFolder = currentRelativePath.toAbsolutePath().toString() + File.separator
     			+ "ExtentReport" + File.separator;
 
-        extent = new ExtentReports(ExtentReportFolder +"/test-output/MyOwnReport.html", true);
+        extent = new ExtentReports(ExtentReportFolder +"/test-output/"+ReportName+".html", true);
         extent
         .addSystemInfo("Host Name", "Waheed's Laptop")
         .addSystemInfo("Environment", "Waheed Ahmed")
+        .addSystemInfo("Browser ", BrowserName)
         .addSystemInfo("User Name", "Waheed Ahmed");
         extent.loadConfig(new File(ExtentReportFolder+"\\extent-config.xml"));
     }

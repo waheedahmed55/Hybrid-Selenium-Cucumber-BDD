@@ -42,7 +42,6 @@ public class EbayChrome {
 
 	WebDriver driver;
 	int i=0;
-	
 
 	@Given("^chrome only validation$")
 	public void chrome_only_validation() throws Throwable {
@@ -67,7 +66,7 @@ public class EbayChrome {
 			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			ExtentReportsClass.startReport();
+			ExtentReportsClass.startReport("ChromeBrowserTest", "Chrome");
 			ExtentReportsClass.test = ExtentReportsClass.extent
 					.startTest("Verify Ebay add to Cart & checkout functionality chrome browser");
 			Assert.assertTrue(true);

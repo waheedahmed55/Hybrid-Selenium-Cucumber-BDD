@@ -49,7 +49,7 @@ public class EbayFireFox {
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			ExtentReportsClass.startReport();
+			ExtentReportsClass.startReport("FirefoxBrowserTest", "FireFox");
 			ExtentReportsClass.test = ExtentReportsClass.extent
 					.startTest("Verify Ebay add to Cart & checkout functionality Firefox browser");
 			Assert.assertTrue(true);
